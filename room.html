@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/wiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/service.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Plactice Room</title>
+</head>
+<title>Room</title>
+</head>
+
+<body>
+    <!-- loding before-->
+    <!-- <div id="loader-bg">
+        <div id="loader"><img src="./assets/img/daigeblue.png" alt="" class="fadeUp"></div>
+    </div> -->
+    <!--loding before-->
+
+    <!--loding after -->
+    <div id="wrap">
+        <header>
+            <!-- header -->
+            <div class="header-left">
+                <h1>Daige Blue</h1>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul class="global-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="/room.html">Room</a></li>
+                        <li><a href="/room.html">Service</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header><!-- header -->
+
+        <main>
+            <div class="contaiter">
+                <!-- slider -->
+                <section class="section_slider">
+                    <!-- スライダーのメインコンテナの div 要素 -->
+                    <div class="swiper-container">
+                        <!-- ラッパーの（スライドを囲む） div 要素 -->
+                        <div class="swiper-wrapper">
+                            <!-- それぞれのスライドの div 要素 -->
+                            <div class="swiper-slide"><img src="/assets/img/livingroom.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="/assets/img/livingroom.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="/assets/img/livingroom.jpg" alt=""></div>
+                        </div>
+                        <!-- ページネーションの div 要素 -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- ナビゲーションボタンの div 要素-->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- スクロールバーの div 要素 -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </section>
+                <!-- section6 -->
+
+                <section class="section2 room" id="about">
+                    <div class="section_img">
+                        <img src="/assets/img/livingroom.jpg" alt="top" class="room01">
+                    </div>
+                    <img src="./assets/img/blue.png" alt="" class="blue fadeup_item01">
+                    <img src="./assets/img/perple.png" alt="" class="perple fadeup_item03">
+
+                    <div class="contents fadeup_item02">
+                        <p class="sub_ttl">めんそーれ</p>
+                        <h2>LivingRoom</h2>
+                        </h2>
+                        <p>ご家族や大切な友人と<br><br>
+
+                            <br>
+                            最大7名までご利用可能の一棟貸し<br>
+                            眺望最高オーシャンビューコンドミニアム<br>
+
+                        </p>
+                    </div>
+                </section>
+                <section class="section3 room">
+                    <div class="contents fadeup_item03">
+                        <p class="sub_ttl">めんそーれ</p>
+                        <h2>Bedroom</h2>
+                        </h2>
+                        <p>ご家族や大切な友人と<br><br>
+
+                            <br>
+                            最大7名までご利用可能の一棟貸し<br>
+                            眺望最高オーシャンビューコンドミニアム<br>
+                        </p>
+                        <img src="./assets/img/green.png" alt="" class="green">
+                        <img src="./assets/img/yallow.png" alt="" class="yellow">
+                    </div>
+                    <div class="section_img fadein">
+                        <img src="./assets/img/room4.jpg" alt="top" class="room_view">
+                    </div>
+                </section>
+                <!--page footer -->
+                <section class="footer">
+                    <div class="inner">
+                        <p class="copyright"><small>&copy; 2021 Daige Blue</small>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!--nav footer -->
+        <footer>
+            <ul class="nav-icoList">
+                <li class="home-ico"><a href="./index.html"><i class="fas fa-home fa-2x my-icoColor"></i></a></li>
+                <li class="resave-ico"><a href="https://travel.yahoo.co.jp/dhotel/shisetsu/HT10078406/IKYU/11079424/10196820/" target="_blank"><i
+                            class="far fa-calendar-check fa-2x my-icoColor"></i></a></li>
+                <li class="tel-ico"><a href=""><i class="fas fa-mobile-alt fa-2x my-icoColor"></i></a></li>
+                <li class="mail-ico"><a href=""><i class="far fa-envelope fa-2x my-icoColor"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!--loding after -->
+    <script>
+        let mySwiper = new Swiper('.swiper-container', {
+            // オプションの設定
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+</body>
+
+</html>

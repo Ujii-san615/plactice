@@ -1,0 +1,651 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-family: 'Kiwi Maru', serif;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  color: rgb(102, 102, 102);
+
+}
+.section2{
+  padding:5% 0;
+}
+
+/* ------------------/* 
+/*      section1      */
+/*-------------------*/
+.section_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  background-color: #e0fafc;
+  height: 100%;
+  z-index:5;
+}
+
+.section1 .yellow{
+  position: absolute;
+  width: 70%;
+  top: 5%;
+  left: 40%;
+}
+.section1 .orange{
+  position: absolute;
+  width: 60%;
+  top: 75%;
+  left: 5%;
+}
+.shell03{
+  position: absolute;
+  width: 30%;
+  bottom: 5%;
+  right: 0%;
+}
+.top_text01{
+  position: absolute;
+  font-size: 2.5rem;
+  padding:20% 0 0 25%;
+  margin: 0 auto;
+  z-index: 15;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+img.top_view {
+  width: 100%;
+}
+img.top_veiw_sp{
+  display: none;
+}
+/* ------------------/* 
+/*      section2      */
+/*-------------------*/
+.section_img{
+  width: 60%;
+}
+.terrace_view{
+  width: 100%;
+}
+.contents{
+  position: relative;
+  height: 100%;
+  width: 40%;
+  padding:0 3% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section2 .blue{
+  position: absolute;
+  width: 25%;
+  bottom: 40%;
+  right: 0;
+  z-index:0;
+}
+
+.section2 .perple{
+  position: absolute;
+  width: 20%;
+  top: 80%;
+  right: 20%;
+  z-index:15;
+}
+.sub_ttl{
+  font-size: 1.2rem;
+  padding:0 45% 0 0;
+}
+.sub_ttl2{
+  font-size: 1.2rem;
+  padding-left:10px;
+}
+h2{
+  font-size: 2.4em;
+  padding:0 0 20% 10%;
+}
+/* ------------------/* 
+/*      section3     */
+/*-------------------*/
+
+.section3 .green{
+  position: absolute;
+  width: 75%;
+  bottom: 0;
+  left: 40%;
+}
+.section3 .yellow{
+  position: absolute;
+  width: 40%;
+  top: 5%;
+  left: 30%;
+}
+
+.sc3_img{
+  width: 100%;
+}
+
+.top_text02{
+  font-size: 1.6rem;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  padding-top: 40%;
+}
+/* ------------------/* 
+/*      section4     */
+/*-------------------*/
+.contents_list{
+  width: 100%;
+  padding-top: 5%;
+}
+.contents_list ul,.circle_ander{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding:5%;
+  width: 100%;
+  background-color: #e0fafc;
+}
+.contents_list ul li{
+  position: relative;
+  list-style: none;
+}
+.contents_list ul li img{
+
+}
+.circle ,.circle_txt{
+  position:absolute;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.circle{
+  top:6%;
+  left: 6%;
+  width: 85%;
+}
+.circle_txt{
+  font-size: 3.0rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+	text-shadow:2px 2px 0 #535353,-1px 1px 0 #3a3a3a,1px -1px 0 #3a3a3a,-1px -1px 0 #3a3a3a;
+  top: 40%;
+}
+.circle_bg{
+  opacity: 0.7;
+}
+
+.circle_ico{
+  opacity: 0.7;
+  width: 100%;
+  align-items: center;
+  padding: 0 30%;
+}
+
+/* ------------------/* 
+/*      section5      */
+/*-------------------*/
+
+.section5 .orange{
+  position: absolute;
+  width: 25%;
+  bottom: 60%;
+  right: 0%;
+}
+.section5.section_img{
+  width: 100%;
+}
+.accece_dsc{
+  font-size: 0.8rem;
+}
+.accece_ttl{
+  font-size: 1.0rem;
+  font-weight: bold;
+  border-bottom:1px solid dimgray;
+  display: inline-block;
+}
+
+/* ------------------/* 
+/*      footer      */
+/*-------------------*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70px;
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #383838;
+  align-items: center;
+  margin-top:10%
+}
+
+footer {
+  z-index: 100;
+  width: 100%;
+  height: 70px;
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #383838;
+  position: fixed;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .nav-icoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .nav-icoList > li {
+  list-style: none;
+  padding: 0 30px;
+}
+
+footer .nav-icoList > li .my-icoColor {
+  color: #fffdf5;
+}
+
+/* ------------------/* 
+/* 可視 fadein */
+/*-------------------*/
+
+.fadein {
+  opacity : 0;
+  transform : translate(0, 100px);
+  transition : all 1s;
+}
+
+.fadein.active{
+  opacity : 1;
+  transform : translate(0, 0);
+  z-index: -10;
+}
+/* ------------------/* 
+/* mizutama fadeup */
+/*-------------------*/
+
+.fadeup_item01,.fadeup_item02,.fadeup_item03{
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;
+  -webkit-animation-duration: 2.0s;
+          animation-duration: 2.0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeUpAnime02 {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpAnime02 {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.fadeup_item02{
+  -webkit-animation-duration: 4.0s;
+  animation-duration: 4.0s;
+}
+
+.fadeup_item03{
+  -webkit-animation-duration: 8.0s;
+  animation-duration: 8.0s;
+}
+
+.fadeup_item04{
+  -webkit-animation-duration: 6.0s;
+  animation-duration: 6.0s;
+  -webkit-animation-name: fadeUpAnime;
+  animation-name: fadeUpAnime;
+}
+
+
+/* ------------------/* 
+/* Loading背景画面設定 */
+/*-------------------*/
+#loader-bg {
+  /*fixedで全面に固定*/
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  z-index: 110;
+}
+
+/* Loading画像中央配置　*/
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 120;
+}
+
+/* Loading アイコンの大きさ設定　*/
+#loader img {
+  width: 260px;
+}
+
+/* fadeUpをするアイコンの動き */
+.fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ------------------/* 
+/*      header       */
+/*-------------------*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  font-family:'Courier New', Courier, monospace;
+  background-color: rgba(224, 250, 252 , 0.4);
+  width: 100%;
+  max-width: 1080px;
+  height: 8%;
+  z-index: 10;
+  margin: 0 auto;
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-left > h1 {
+  font-size: 35px;
+}
+
+header .header-right nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header .header-right nav ul li {
+  padding-left: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+  padding: 0 20px;
+}
+
+.global-nav li a:visited, a:link{
+  color: black;
+}
+
+header .header-right nav ul li::before,
+header .header-right nav ul li::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  background: #0481A2;
+  /*線の形状*/
+  width: 0;
+  height: 2px;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/* ----------------------------/* 
+/*           sp                */
+/*----------------------------*/
+@media screen and (max-width: 767px) {
+  .main {
+    margin: 0;
+  }
+  /* section1 */
+
+  .section_box{
+    width: 20%;
+  }
+  .section_box h1{
+    font-size: 1.5rem;
+    padding: 15% 0 0 5%;
+  }
+  .section_box .yellow{
+    width: 100%;
+  }
+  .section_box .orange{
+    width: 70%;
+    top: 60%;
+    left: 0%;
+  }  
+  .section_box .shell03{
+    width: 60%;
+    bottom: 5%;
+    right: 0%;
+  }  
+  header {
+    display: none;
+  }
+  .section1 {
+    height: 500px;
+  }
+  img.top_veiw{
+    display: none;
+  }
+  img.top_veiw_sp{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* section2 */
+  .section2{
+    flex-direction: column-reverse;
+  }
+  .section2 .contents{
+    width: 100%;
+  }
+  .contents{
+    text-align: center;
+  }
+  .contents h2{
+    padding: 0 0 5% 0;
+    font-size: 2.0em;
+  }
+  .section_img{
+    width: 100%;
+  }
+  .section2 .blue{
+    top: 0;
+    right: 30%;
+    width: 40%;
+  }
+  .section2 .perple{
+    display: none;
+  }
+  /* section4 */
+
+  .circle_txt{
+    font-size: 2.0rem;
+  }
+
+  /* section5 */
+  .section5{
+    flex-direction: column-reverse;
+  }
+  .section5 .contents{
+    width: 100%;
+  }
+  .accece_dsc li{
+    list-style: none;
+  }
+  .section5 .orange{
+    width: 25%;
+    top: 0%;
+    bottom: 100%;
+    right: 0%;
+  }
+  /* footer */
+
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+  .pc { display: none !important; }
+  .sp { display: block !important; }
+}
+
+@media screen and (min-width: 767px) {
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+/*# sourceMappingURL=style.css.map */
