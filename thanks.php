@@ -32,6 +32,7 @@ $dbh = null; //dbh：データベースハンドル
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/wiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
     <!--plagin css-->
@@ -47,12 +48,64 @@ $dbh = null; //dbh：データベースハンドル
     <title>transmit　complete</title>
 </head>
 <body>
+<div id="wrap">
+        <header>
+            <!-- header -->
+            <div class="header-left">
+                <h1>Daige Blue</h1>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul class="global-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="/room.html">Room</a></li>
+                        <li><a href="/room.html">Service</a></li>
+                        <li><a href="/daigeblue/contact.php">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header><!-- header -->
+<main>
+<section class="contact_form">
+    <div class="container_form">
     <h1>お問い合わせありがとうございました！</h1>
         <div>
-            <h3>お問い合わせ詳細内容</h3>
-            <p>ニックネーム：<?=$nickname?></p>
-            <p>メールアドレス：<?=$email?></p>
-            <p>お問い合わせ内容：<?=$content?></p>
+            <p>お問い合わせのご返信にはお時間がかかる場合がございます。</br>
+        急ぎのご連絡を必要とする場合は、お電話にてご連絡ください。</p>
         </div>
+        <input type="submit" class="buttom" whidth="100%"  value="ホームへ戻る">
+    </div>
+</section>
+</main>
+
+
+</div>
+                <!--page footer -->
+                <section class="footer">
+                    <div class="inner">
+                        <p class="copyright"><small>&copy; 2021 Daige Blue</small>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+<!--nav footer -->
+<footer>
+            <ul class="nav-icoList">
+                <li class="home-ico"><a href="#"><i class="fas fa-home fa-2x my-icoColor"></i></a></li>
+                <li class="resave-ico"><a
+                        href="https://travel.yahoo.co.jp/dhotel/shisetsu/HT10078406/IKYU/11079424/10196820/"
+                        target="_blank"><i class="far fa-calendar-check fa-2x my-icoColor"></i></a></li>
+                <li class="tel-ico"><a href="tel:000-1234-5678"><i class="fas fa-mobile-alt fa-2x my-icoColor"></i></a></li>
+                <li class="mail-ico"><a href="./contact.php"><i class="far fa-envelope fa-2x my-icoColor"></i></a></li>
+            </ul>
+        </footer>
+    <!--loding after -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </body>
 </html>
