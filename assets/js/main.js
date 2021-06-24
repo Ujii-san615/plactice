@@ -38,7 +38,7 @@ $(function () {
         $('#contens').css('display', 'block');//コンテンツを表示する
     });
     
-        setTimeout('stopload()', 10000);　//いつまでもローディング状態にならないように10秒で強制表示させる
+        setTimeout('stopload()', 10000);//いつまでもローディング状態にならないように10秒で強制表示させる
 
     function stopload() { //強制表示の関数
         $('#contens').css('display', 'block');

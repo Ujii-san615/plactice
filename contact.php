@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -16,11 +17,12 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
-    <title>daigeblue contact</title>
+    <title>daigeblue contact index</title>
 
 </head>
+
 <body>
-<div id="wrap">
+    <div id="wrap">
         <header>
             <!-- header -->
             <div class="header-left">
@@ -39,67 +41,70 @@
         </header><!-- header -->
         <main>
 
-    <section class="contact_form">
-    <div class="container_form">
-        <h1>お問い合わせ情報入力</h1>
-        <form action="./check.php" method="POST">
+            <section class="contact_form">
+                <div class="container_form">
+                    <h1>お問い合わせ情報入力</h1>
+                    <form action="./check.php" method="POST">
 
-    <table class="form-table">
-    <tbody>
-    <tr>
-        <th>氏名（カナ）</th>
-        <td>
-            <input class="box" type="text" name="nickname" style="width:100%"placeholder="例)ヤマダ タロウ">
-        </td>
-    </tr>
-    <tr>
-        <th>メールアドレス</th>
-        <td>
-            <input class="box" type="text" name="email" style="width:100%"placeholder="例)daige_blue@abcdefg.com">
-        </td>
-    </tr>
-    <!-- <tr>
+                        <table class="form-table">
+                            <tbody>
+                                <tr>
+                                    <th>氏名（カナ）</th>
+                                    <td>
+                                        <input class="box" type="text" name="nickname" style="width:100%"
+                                            placeholder="例)ヤマダ タロウ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>メールアドレス</th>
+                                    <td>
+                                        <input class="box" type="text" name="email" style="width:100%"
+                                            placeholder="例)daige_blue@abcdefg.com">
+                                    </td>
+                                </tr>
+                                <!-- <tr>
         <th>電話番号</th>
         <td>
             <input class="box" type="text" name="email" style="width:200px"placeholder="メールアドレス">
         </td>
     </tr> -->
-    <tr>
-        <th>お問い合わせ内容</th>
-        <td>
-            <textarea class="box" name="content" cols="40" rows="5" placeholder="お問い合わせ内容を入力してください"></textarea>
-        </td>
-    </tr>
+                                <tr>
+                                    <th>お問い合わせ内容</th>
+                                    <td>
+                                        <textarea class="box" name="content" cols="40" rows="5"
+                                            placeholder="お問い合わせ内容を入力してください"></textarea>
+                                    </td>
+                                </tr>
 
-    </tbody>
+                            </tbody>
 
-    </table>
+                        </table>
 
-    <input class="buttom" whidth="100%" type="submit" value="送信">
+                        <input class="buttom" whidth="100%" type="submit" value="送信">
 
-    </form>
+                    </form>
+                </div>
+            </section>
+            <!--page footer -->
+            <section class="footer">
+                <div class="inner">
+                    <p class="copyright"><small>&copy; 2021 Daige Blue</small>
+                    </p>
+                </div>
+            </section>
     </div>
-    </section>
-                <!--page footer -->
-                <section class="footer">
-                    <div class="inner">
-                        <p class="copyright"><small>&copy; 2021 Daige Blue</small>
-                        </p>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <!--nav footer -->
-        <footer>
-            <ul class="nav-icoList">
-                <li class="home-ico"><a href="#"><i class="fas fa-home fa-2x my-icoColor"></i></a></li>
-                <li class="resave-ico"><a
-                        href="https://travel.yahoo.co.jp/dhotel/shisetsu/HT10078406/IKYU/11079424/10196820/"
-                        target="_blank"><i class="far fa-calendar-check fa-2x my-icoColor"></i></a></li>
-                <li class="tel-ico"><a href="tel:000-1234-5678"><i class="fas fa-mobile-alt fa-2x my-icoColor"></i></a></li>
-                <li class="mail-ico"><a href="./contact.php"><i class="far fa-envelope fa-2x my-icoColor"></i></a></li>
-            </ul>
-        </footer>
+    </main>
+    <!--nav footer -->
+    <footer>
+        <ul class="nav-icoList">
+            <li class="home-ico"><a href="#"><i class="fas fa-home fa-2x my-icoColor"></i></a></li>
+            <li class="resave-ico"><a
+                    href="https://travel.yahoo.co.jp/dhotel/shisetsu/HT10078406/IKYU/11079424/10196820/"
+                    target="_blank"><i class="far fa-calendar-check fa-2x my-icoColor"></i></a></li>
+            <li class="tel-ico"><a href="tel:000-1234-5678"><i class="fas fa-mobile-alt fa-2x my-icoColor"></i></a></li>
+            <li class="mail-ico"><a href="./contact.php"><i class="far fa-envelope fa-2x my-icoColor"></i></a></li>
+        </ul>
+    </footer>
     </div>
     <!--loding after -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"

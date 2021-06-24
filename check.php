@@ -32,8 +32,9 @@ if ($content == '') {
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -48,12 +49,13 @@ if ($content == '') {
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
-    <title>daigeblue contact</title>
+    <title>daigeblue contact check</title>
 
 </head>
+
 <body>
 
-<div id="wrap">
+    <div id="wrap">
         <header>
             <!-- header -->
             <div class="header-left">
@@ -70,76 +72,82 @@ if ($content == '') {
                 </nav>
             </div>
         </header><!-- header -->
-<main>
+        <main>
 
-<section class="contact_form">
-    <div class="container_form">
-    <h1>入力内容確認</h1>
-    <p>以下の内容でよろしいですか？</p>
-    <table class="form-table">
-    <tbody>
-    <tr>
-        <th>氏名（カナ）</th>
-        <td>
-        <p><?php echo $nickname_result ?></p>
-        </td>
-    </tr>
-    <tr>
-        <th>メールアドレス</th>
-        <td>
-        <p><?php echo $email_result ?></p>
-        </td>
-    </tr>
-    <!-- <tr>
+            <section class="contact_form">
+                <div class="container_form">
+                    <h1>入力内容確認</h1>
+                    <p>以下の内容でよろしいですか？</p>
+                    <table class="form-table">
+                        <tbody>
+                            <tr>
+                                <th>氏名（カナ）</th>
+                                <td>
+                                    <p>
+                                        <?php echo $nickname_result ?>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>メールアドレス</th>
+                                <td>
+                                    <p>
+                                        <?php echo $email_result ?>
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- <tr>
         <th>電話番号</th>
         <td>
             <input class="box" type="text" name="email" style="width:200px"placeholder="メールアドレス">
         </td>
     </tr> -->
-    <tr>
-        <th>お問い合わせ内容</th>
-        <td>
-        <p><?php echo $content_result ?></p>
-        </td>
-    </tr>
+                            <tr>
+                                <th>お問い合わせ内容</th>
+                                <td>
+                                    <p>
+                                        <?php echo $content_result ?>
+                                    </p>
+                                </td>
+                            </tr>
 
-    </tbody>
-    </table>
-<!--次のページにデータを送る-->
-    <form action="./thanks.php" method="POST">
-        <input type="hidden" name="nickname" value="<?=$nickname?>">
-        <input type="hidden" name="email" value="<?=$email?>">
-        <input type="hidden" name="content" value="<?=$content?>">
-        <input class="buttom" whidth="100%" onclick="history.back()" value="修正する">
+                        </tbody>
+                    </table>
+                    <!--次のページにデータを送る-->
+                    <form action="./thanks.php" method="POST">
+                        <input type="hidden" name="nickname" value="<?=$nickname?>">
+                        <input type="hidden" name="email" value="<?=$email?>">
+                        <input type="hidden" name="content" value="<?=$content?>">
+                        <input class="buttom" whidth="100%" onclick="history.back()" value="修正する">
 
-        <?php if($nickname != '' && $email != '' && $content != ''): ?>
-        <input type="submit" class="buttom" whidth="100%"  value="送信する">
-        <?php endif; ?>
-    
-    </form>
-        </div>
-        </section>
-                <!--page footer -->
-                <section class="footer">
-                    <div class="inner">
-                        <p class="copyright"><small>&copy; 2021 Daige Blue</small>
-                        </p>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <!--nav footer -->
-        <footer>
-            <ul class="nav-icoList">
-                <li class="home-ico"><a href="#"><i class="fas fa-home fa-2x my-icoColor"></i></a></li>
-                <li class="resave-ico"><a
-                        href="https://travel.yahoo.co.jp/dhotel/shisetsu/HT10078406/IKYU/11079424/10196820/"
-                        target="_blank"><i class="far fa-calendar-check fa-2x my-icoColor"></i></a></li>
-                <li class="tel-ico"><a href="tel:000-1234-5678"><i class="fas fa-mobile-alt fa-2x my-icoColor"></i></a></li>
-                <li class="mail-ico"><a href="./contact.php"><i class="far fa-envelope fa-2x my-icoColor"></i></a></li>
-            </ul>
-        </footer>
-</div>
+                        <?php if($nickname != '' && $email != '' && $content != ''): ?>
+                        <input type="submit" class="buttom" whidth="100%" value="送信する">
+                        <?php endif; ?>
+
+                    </form>
+                </div>
+            </section>
+            <!--page footer -->
+            <section class="footer">
+                <div class="inner">
+                    <p class="copyright"><small>&copy; 2021 Daige Blue</small>
+                    </p>
+                </div>
+            </section>
+    </div>
+    </main>
+    <!--nav footer -->
+    <footer>
+        <ul class="nav-icoList">
+            <li class="home-ico"><a href="#"><i class="fas fa-home fa-2x my-icoColor"></i></a></li>
+            <li class="resave-ico"><a
+                    href="https://travel.yahoo.co.jp/dhotel/shisetsu/HT10078406/IKYU/11079424/10196820/"
+                    target="_blank"><i class="far fa-calendar-check fa-2x my-icoColor"></i></a></li>
+            <li class="tel-ico"><a href="tel:000-1234-5678"><i class="fas fa-mobile-alt fa-2x my-icoColor"></i></a></li>
+            <li class="mail-ico"><a href="./contact.php"><i class="far fa-envelope fa-2x my-icoColor"></i></a></li>
+        </ul>
+    </footer>
+    </div>
 
     <!--loding after -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -149,4 +157,5 @@ if ($content == '') {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 </body>
+
 </html>
